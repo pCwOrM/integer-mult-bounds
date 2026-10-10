@@ -1,4 +1,54 @@
-# A sharper exponent for integer multiplication
+# A Sharper Exponent for Integer Multiplication & Bipartite Carrier Compression Record
+
+[![World Record: W=176,906,915](https://img.shields.io/badge/World%20Record-W%3D176%2C906%2C915-brightgreen.svg)](#-new-world-record-bipartite-carrier-compression-in-schönhage-tensors)
+[![Wires Saved: -377,890](https://img.shields.io/badge/Wire%20Reduction--377%2C890%20Wires-success.svg)](#-new-world-record-bipartite-carrier-compression-in-schönhage-tensors)
+[![Certified Exponent: kappa](https://img.shields.io/badge/%CE%BA-4.1310765%C3%9710%E2%81%BB%E2%81%B5-blue.svg)](#-new-world-record-bipartite-carrier-compression-in-schönhage-tensors)
+[![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281%2Fzenodo.23268580-024dad.svg)](https://doi.org/10.5281/zenodo.23268580)
+[![Concept DOI](https://img.shields.io/badge/Concept%20DOI-10.5281%2Fzenodo.23268579-indigo.svg)](https://doi.org/10.5281/zenodo.23268579)
+[![arXiv Submission](https://img.shields.io/badge/arXiv-submit%2F8207241%20(submitted)-blue.svg)](https://arxiv.org/submit/8207241)
+[![Lean 4 Verified: 0 Sorry](https://img.shields.io/badge/Lean%204-Machine--Certified%20(0%20sorry)-brightgreen.svg)](formal/lean/SchonhageTensorMatch.lean)
+[![CrocSwap PR #226](https://img.shields.io/badge/CrocSwap%20PR-%23226-orange.svg)](https://github.com/CrocSwap/integer-mult-bounds/pull/226)
+[![Record Branch](https://img.shields.io/badge/Record%20Branch-record%2Fdagli--carrier--compression--record-blueviolet.svg)](https://github.com/pCwOrM/integer-mult-bounds/tree/record/dagli-carrier-compression-record)
+
+> 🏆 **New World Record & Machine-Certified Bound (Paper 8):**  
+> **"Bipartite Carrier Compression and Machine-Certified Bounds in Schönhage Trilinear Multiplication Tensors"**  
+> *Authors:* Volkan Dağlı, Zerrin Dağlı, Dağhan Dağlı (ITouch Systems & Anadolu Univ / Mersin Univ / Toros Science)  
+> *Permanent Zenodo Archive:* [10.5281/zenodo.23268580](https://doi.org/10.5281/zenodo.23268580) (Concept: [10.5281/zenodo.23268579](https://doi.org/10.5281/zenodo.23268579)) │ *arXiv:* `submit/8207241` [submitted] │ *CrocSwap PR:* [#226](https://github.com/CrocSwap/integer-mult-bounds/pull/226)  
+> *Record Branch:* [`record/dagli-carrier-compression-record`](https://github.com/pCwOrM/integer-mult-bounds/tree/record/dagli-carrier-compression-record) │ *Lean 4 Formal Proof:* [`formal/lean/SchonhageTensorMatch.lean`](formal/lean/SchonhageTensorMatch.lean) (0 `sorry`)
+
+---
+
+## 🏆 New World Record: Bipartite Carrier Compression in Schönhage Tensors
+
+This repository incorporates the machine-certified computational and formal proofs establishing a new complexity bound for integer multiplication:
+
+$$
+T(n) = O\left(n (\log n)^{1 - \kappa}\right),\qquad \kappa = \frac{826,215,307}{20,000,000,000,000} \approx 4.131076535 \times 10^{-5}
+$$
+
+Operating within the conditional framework of Schönhage trilinear tensor decomposition with alternating carrier graphs (originating from OpenAI Preprint #109 and community research tracks), the Dağlı Bipartite Carrier Compression construction delivers:
+
+1. **Global Physical Wire Width Reduction:**
+   $$W = 2 \times 4,073,300 + 2,300 \cdot R_{23} + 1,771 \cdot R_{25} = \mathbf{176,906,915}$$
+   achieving a net reduction of **$\mathbf{377,890}$ physical wires** relative to baseline PR #49 ($W = 177,284,805$).
+2. **Elimination of 185 Carrier Roles:**
+   $-95$ roles eliminated in $h = 23$ ($R_{23} = 36,382 \to \mathbf{36,287}$) and $-90$ roles eliminated in $h = 25$ ($R_{25} = 48,255 \to \mathbf{48,165}$).
+3. **Certified Rational Exponent:**
+   $$\kappa = \frac{826,215,307}{20,000,000,000,000} \approx \mathbf{4.131076535 \times 10^{-5}}$$
+   improving prior baseline PR #49 by $+7.212551 \times 10^{-7}$ ($1.377\times$ the prior advance).
+4. **Second-Moment Rational Bound:**
+   $$AB = \frac{5,164,059}{125,000,000,000} \approx \mathbf{4.1312472 \times 10^{-5}}$$
+5. **Machine-Certified in Lean 4 (0 sorry):**
+   Formally proved in [`formal/lean/SchonhageTensorMatch.lean`](formal/lean/SchonhageTensorMatch.lean) without postulates or unproven steps.
+6. **Reproducible Python Gauntlet:**
+   All 47 assembly inequalities, 7 safety margins, and cryptographic file hashes verified via `python research/dagli-carrier-compression/verify_certificate.py`.
+
+```sh
+# Run the standalone verifier (0 external dependencies, exact Q-arithmetic)
+python research/dagli-carrier-compression/verify_certificate.py
+```
+
+---
 
 **Community research maintained by Douglas Colkitt — conditional on the original
 OpenAI #109 framework.**
@@ -340,6 +390,29 @@ scoped negative results and reproducible certificates.
 | **[compact-control-34](patches/compact-control-34.patch)** | **`83/10^12 > 2^-34`** | **Compact controls, complete reservations, local repair and separate complex arity** |
 | [complex-compression-31](patches/complex-compression-31.patch) | `2^-31` | Weighted complex circuits, binary phase frames and complete auxiliary sharing |
 | **[ternary-30](patches/ternary-30.patch)** | **`2^-30`** | **Ternary five-subset circuit, rational frames and fixed-alphabet interchange** |
+
+---
+
+## 🏛️ Associated Formal Verification & Scientific Corpus
+
+Paper 8 (Schönhage Tensor Carrier Compression) represents the discrete algebra and trilinear tensor optimization pillar within the unified open-science corpus:
+
+| Makale / Sütun | Başlık / Katkı | En Son Sürüm DOI | Çatı / Konsept DOI | arXiv / Doğrulama Durumu | Birincil Depo |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Paper 1: MFNS** | Mandelbrot Fractal Neural Synthesis | [`10.5281/zenodo.22867037`](https://doi.org/10.5281/zenodo.22867037) | [`10.5281/zenodo.22774934`](https://doi.org/10.5281/zenodo.22774934) | Açık Bilim Önbaskısı (Revizyonda) | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
+| **Paper 2: OED** | Orbital Error Dynamics (OED v3) | [`10.5281/zenodo.22900465`](https://doi.org/10.5281/zenodo.22900465) | [`10.5281/zenodo.22896855`](https://doi.org/10.5281/zenodo.22896855) | [`arXiv:2609.30115`](https://arxiv.org/abs/2609.30115) • [HF Paper](https://huggingface.co/papers/2609.30115) | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
+| **Paper 3: WerreduR** | Procedural Fractal Pedagogy (v4.0) | [`10.5281/zenodo.23128224`](https://doi.org/10.5281/zenodo.23128224) | [`10.5281/zenodo.22999420`](https://doi.org/10.5281/zenodo.22999420) | Hedef: Q1 AIED / CAEAI • [Canlı Simülatör](https://pcworm.github.io/WerreduR/) | [`jesmaat/WerreduR`](https://github.com/jesmaat/WerreduR) (Mirror: [`pCwOrM/WerreduR`](https://github.com/pCwOrM/WerreduR)) |
+| **Paper 4: BH Page** | Black Hole Page Curve & Quantum Gravity (v5) | [`10.5281/zenodo.23072120`](https://doi.org/10.5281/zenodo.23072120) | [`10.5281/zenodo.22961999`](https://doi.org/10.5281/zenodo.22961999) | CERN Record 22978460 • Stabilizer Kodları | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
+| **Paper 5: Formal** | Lean 4 40-Core Gauntlet (v2) | [`10.5281/zenodo.22983889`](https://doi.org/10.5281/zenodo.22983889) | [`10.5281/zenodo.22974543`](https://doi.org/10.5281/zenodo.22974543) | [`arXiv:2609.33066`](https://arxiv.org/abs/2609.33066) • [HF Paper](https://huggingface.co/papers/2609.33066) | [`pCwOrM/werr`](https://github.com/pCwOrM/werr) & [`werracle`](https://github.com/pCwOrM/werracle) |
+| **Paper 6: WerrSoma** | Drosophila Connectome (158K Nöron, v1.1) | [`10.5281/zenodo.23072929`](https://doi.org/10.5281/zenodo.23072929) | [`10.5281/zenodo.22996625`](https://doi.org/10.5281/zenodo.22996625) | `arXiv:submit/8161759` [on hold] • [3D Portal](https://werrsoma.answerr.me/) | [`Lexovian/WerrSoma`](https://github.com/Lexovian/WerrSoma) (Mirror: [`pCwOrM/WerrSoma`](https://github.com/pCwOrM/WerrSoma)) |
+| **Paper 7: Werracle** | Sub-Cent Intra-Block EVM AI Oracle (v1) | [`10.5281/zenodo.22942599`](https://doi.org/10.5281/zenodo.22942599) | [`10.5281/zenodo.22942598`](https://doi.org/10.5281/zenodo.22942598) | [`arXiv:2609.30719`](https://arxiv.org/abs/2609.30719) • [HF Paper](https://huggingface.co/papers/2609.30719) | [`pCwOrM/werracle`](https://github.com/pCwOrM/werracle) & [`werralem`](https://github.com/pCwOrM/werralem) |
+| **Paper 8: Schönhage**| Tensor Taşıyıcı Sıkıştırma ($W=176M$) | [`10.5281/zenodo.23268580`](https://doi.org/10.5281/zenodo.23268580) | [`10.5281/zenodo.23268579`](https://doi.org/10.5281/zenodo.23268579) | `arXiv:submit/8207241` [submitted] • CrocSwap #226 | [`pCwOrM/integer-mult-bounds`](https://github.com/pCwOrM/integer-mult-bounds) |
+| **Paper 9: Güneş Dili**| Deterministik Morfoloji & 53 Koma | [`10.5281/zenodo.23273006`](https://doi.org/10.5281/zenodo.23273006) | [`10.5281/zenodo.23273005`](https://doi.org/10.5281/zenodo.23273005) | Lean 4 Doğrulanmış • [Canlı Portal](https://pcworm.github.io/gunes-dili/) | [`pCwOrM/gunes-dili`](https://github.com/pCwOrM/gunes-dili) |
+| **Motor: WERR** | Zero-VRAM Gauntlet & JevBench Intake | [`10.5281/zenodo.22939253`](https://doi.org/10.5281/zenodo.22939253) | [`10.5281/zenodo.22867425`](https://doi.org/10.5281/zenodo.22867425) | [`arXiv:2609.25498`](https://arxiv.org/abs/2609.25498) • [HF Paper](https://huggingface.co/papers/2609.25498) • [HF Dataset](https://huggingface.co/datasets/pCwOrM/werr_open_decisions) | [`pCwOrM/werr`](https://github.com/pCwOrM/werr) |
+| **Platform: answerr**| Reflex AI & Canlı Çalışma Alanı | Canlı: [`answerr.me`](https://answerr.me) | - | Çift Bilişsel Refleks Platformu & API | [`pCwOrM/answerr`](https://github.com/pCwOrM/answerr) |
+| **Ayrık Alg** | GAP-Lean4 Biçimsel Doğrulanmış Port (35 Teorem)| [`10.5281/zenodo.23045504`](https://doi.org/10.5281/zenodo.23045504) | [`10.5281/zenodo.23045503`](https://doi.org/10.5281/zenodo.23045503) | [`arXiv:2609.38492`](https://arxiv.org/abs/2609.38492) • [HF Paper](https://huggingface.co/papers/2609.38492) | [`pCwOrM/gap-lean4-port`](https://github.com/pCwOrM/gap-lean4-port) |
+
+---
 
 ## Citation and license
 
