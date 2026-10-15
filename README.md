@@ -14,6 +14,7 @@
 [![CrocSwap Contributors: @pCwOrM](https://img.shields.io/badge/CrocSwap%20Contributors-Volkan%20Dagli%20(%40pCwOrM)-024dad.svg)](https://github.com/CrocSwap/integer-mult-bounds/blob/50d768818f579d4e165b4c257c6ee25bca300802/CONTRIBUTORS.md)
 [![PR Ledger: Incorporated](https://img.shields.io/badge/PR%20Ledger-incorporated-success.svg)](https://github.com/CrocSwap/integer-mult-bounds/blob/50d768818f579d4e165b4c257c6ee25bca300802/docs/research/pr-ledger.md)
 [![Record Branch](https://img.shields.io/badge/Record%20Branch-record%2Fdagli--carrier--compression--record-blueviolet.svg)](https://github.com/pCwOrM/integer-mult-bounds/tree/record/dagli-carrier-compression-record)
+[![Sister Repo: WERRobotics](https://img.shields.io/badge/Sister%20Repo-WERRobotics%20(Arduino%20Edge%20AI)-ff9100.svg?logo=arduino&logoColor=white)](https://github.com/pCwOrM/WERRobotics)
 
 > 🏆 **New World Record & Machine-Certified Bound (Paper 8):**  
 > **"Bipartite Carrier Compression and Machine-Certified Bounds in Schönhage Trilinear Multiplication Tensors"**  
@@ -445,6 +446,7 @@ Paper 8 (Schönhage Tensor Carrier Compression) represents the discrete algebra 
 | **Motor: WERR** | Zero-VRAM Gauntlet & JevBench Intake | [`10.5281/zenodo.22939253`](https://doi.org/10.5281/zenodo.22939253) | [`10.5281/zenodo.22867425`](https://doi.org/10.5281/zenodo.22867425) | [`arXiv:2609.25498`](https://arxiv.org/abs/2609.25498) • [HF Paper](https://huggingface.co/papers/2609.25498) • [HF Dataset](https://huggingface.co/datasets/pCwOrM/werr_open_decisions) | [`pCwOrM/werr`](https://github.com/pCwOrM/werr) |
 | **Platform: answerr**| Reflex AI & Canlı Çalışma Alanı | Canlı: [`answerr.me`](https://answerr.me) | - | Çift Bilişsel Refleks Platformu & API | [`pCwOrM/answerr`](https://github.com/pCwOrM/answerr) |
 | **Ayrık Alg** | GAP-Lean4 Biçimsel Doğrulanmış Port (35 Teorem)| [`10.5281/zenodo.23045504`](https://doi.org/10.5281/zenodo.23045504) | [`10.5281/zenodo.23045503`](https://doi.org/10.5281/zenodo.23045503) | [`arXiv:2609.38492`](https://arxiv.org/abs/2609.38492) • [HF Paper](https://huggingface.co/papers/2609.38492) | [`pCwOrM/gap-lean4-port`](https://github.com/pCwOrM/gap-lean4-port) |
+| **Robotik: WERRobotics** | Sıfır-Bellek Arduino & Gömülü Edge AI Çekirdeği (`v0.5.1`) | [`10.5281/zenodo.22939253`](https://doi.org/10.5281/zenodo.22939253) | [`10.5281/zenodo.22867425`](https://doi.org/10.5281/zenodo.22867425) | ATmega328P / ESP32 / STM32 (`0 Byte Heap`, `TR 2026/016633`) | [`pCwOrM/WERRobotics`](https://github.com/pCwOrM/WERRobotics) |
 
 ---
 
