@@ -68,6 +68,6 @@ Certified with 0 `sorry`.
 
 ## Attribution & Authorship
 
-- **Authors:** Volkan Dağlı (Anadolu University & ITouch Systems), Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anadolu Lisesi), Dağhan Dağlı (Toros Science High School / MEV Toros University)
+- **Authors:** Volkan Dağlı (Anadolu University & ITouch Systems), Dr. Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anadolu Lisesi), Dağhan Dağlı (Toros Science High School / MEV Toros University)
 - **Infrastructure Support:** Dedicated bare-metal server cluster and verification resources provided by Bekirhan Dağlı (Managing Partner) and ITouch Systems Research & Development.
 - **Community Lineage:** Built upon foundational work by Rohan Arun (PR #49), Chafik Boukhalfa (PR #43/#46/#48), RaD project / hipotures (PR #41), Douglas Colkitt, Harvey–van der Hoeven, and OpenAI Preprint #109.
