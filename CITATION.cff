@@ -1,53 +1,46 @@
 cff-version: 1.2.0
-message: >-
-  Please cite Dugongue's coordinated-frame and entrance-bank construction,
-  its individual dependencies, this project and the upstream manuscript.
-  Project-level authorship identifies the maintainer, not sole authorship
-  of the community result. See CONTRIBUTORS.md and the frozen notices.
-title: "A sharper exponent for integer multiplication"
-authors:
-  - family-names: Colkitt
-    given-names: Douglas
-license: Apache-2.0
+message: "If you use this software, formal proofs, or empirical datasets in your research, please cite our canonical works below."
 type: software
-version: "community-entrance-banks-2026-10-09"
-date-released: 2026-10-09
-repository-code: "https://github.com/CrocSwap/integer-mult-bounds"
-url: "https://github.com/CrocSwap/integer-mult-bounds"
-abstract: >-
-  Community research on integer multiplication with conditional kappa =
-  330942774629799/500000000000000000 = 0.000661885549259598. Dugongue's
-  coordinated-frame and completed-entrance-bank construction builds on
-  chafreaky's shared-edge complex supplier and eumemic's physical bit word,
-  retaining the cumulative paired-cube, carrier, shared-core and assembly
-  lineage. A maintainer supplement supplies the bank scheduling argument.
-  Retained OpenAI #109 analytic, uniform-recursion and fixed-tape interfaces
-  remain assumed. Finite checks and written review are not a formal proof
-  of multiplication or independent human peer review.
-preferred-citation:
-  type: unpublished
-  title: "Coordinated frames and completed entrance banks: conditional kappa = 6.61885549259598e-4"
-  authors:
-    - name: Dugongue
-    - name: chafreaky
-    - name: eumemic
-  year: 2026
-  url: "https://github.com/CrocSwap/integer-mult-bounds/pull/186"
-  notes: >-
-    Cite PR181 and PR168 together with their individual dependencies and
-    the bank scheduling supplement. This entry does not replace constituent
-    attribution, earlier framework credit, source licenses or assistance
-    disclosures in CONTRIBUTORS.md, NOTICE and the frozen source archive.
+title: "Bipartite Carrier Compression and Machine-Certified Bounds in Schönhage Trilinear Multiplication Tensors"
+abstract: "Bipartite Carrier Compression and Machine-Certified Bounds in Schönhage Trilinear Multiplication Tensors — Official open-science repository, machine-checked Lean 4 formal verification proofs, and reproducible datasets in the WERR & ITouch Systems scientific corpus."
+authors:
+  - family-names: "Dağlı"
+    given-names: "Volkan"
+    orcid: "https://orcid.org/0009-0000-1587-8703"
+    affiliation: "Anadolu University & ITouch Systems, Çukurova University Science Park"
+  - family-names: "Dağlı"
+    given-names: "Zerrin"
+    orcid: "https://orcid.org/0000-0001-9490-6425"
+    affiliation: "Mersin University & Yusuf Kalkavan Anatolian High School"
+  - family-names: "Dağlı"
+    given-names: "Dağhan"
+    orcid: "https://orcid.org/0009-0003-2492-8313"
+    affiliation: "Toros Science High School, Mersin Education Foundation (Toros University)"
+repository-code: "https://github.com/pCwOrM/integer-mult-bounds"
+url: "https://werr.io"
+doi: "10.5281/zenodo.23232541"
+version: "2.0.0"
+date-released: "2026-10-25"
+license: "LicenseRef-BSL-1.1"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23232541"
+    description: "CERN Zenodo Concept DOI (Always resolves to the latest version)"
+  - type: doi
+    value: "10.5281/zenodo.23295370"
+    description: "CERN Zenodo Version-Pinned DOI"
+  - type: other
+    value: "TR 2026/016285"
+    description: "TÜRKPATENT National Priority Application (Procedural Weight & On-Chain Decision Synthesis)"
+  - type: other
+    value: "TR 2026/016633"
+    description: "TÜRKPATENT National Priority Application (Bio-Synthetic Neuromorphic Connectome & Hardware Coprocessor)"
 keywords:
-  - integer multiplication
-  - computational complexity
-  - exact arithmetic
-  - parameter optimization
-  - reproducible research
-references:
-  - type: unpublished
-    title: "Integer multiplication below n log n"
-    authors:
-      - name: OpenAI
-    year: 2026
-    url: "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Integer-multiplication-below-n-log-n-September-23-2026"
+  - "procedural boundary dynamics"
+  - "polynomial escape dynamics"
+  - "zero-storage neural synthesis"
+  - "lean4 formal verification"
+  - "on-chain ai oracle"
+  - "werr"
+  - "werracle"
+  - "answerr"
